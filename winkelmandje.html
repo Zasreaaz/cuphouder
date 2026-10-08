@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Het team achter de Cuphouder.">
-  <title>Over ons – WIS-H</title>
+  <meta name="description" content="Je winkelmandje bij WIS-H.">
+  <title>Winkelmandje – WIS-H</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
     <nav id="hoofdmenu" aria-label="Hoofdmenu">
       <a href="index.html">Het product</a>
       <a href="duurzaamheid.html">Duurzaamheid</a>
-      <a href="over-ons.html" aria-current="page">Over ons</a>
+      <a href="over-ons.html">Over ons</a>
     </nav>
     <a class="cart-link" href="winkelmandje.html" aria-label="Winkelmandje, 0 producten">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
@@ -42,24 +42,25 @@
 </header>
 
 <main>
-  <div class="hero">
+  <section class="cart-page">
     <div class="wrap">
-      <div>
-        <h1>Over ons</h1>
-        <p>Wij zijn WIS-H, het team achter de Cuphouder. Samen werken we aan minder restafval in de zorg.</p>
+      <h1>Winkelmandje</h1>
+
+      <div class="cart-empty" hidden>
+        <p>Je winkelmandje is nog leeg.</p>
+        <a class="btn" href="product.html">Bekijk de Cuphouder</a>
       </div>
-      <img class="hero-logo" src="assets/img/wish-logo.png" alt="Logo van WIS-H, Waste Intake Systems Healthcare" width="520" height="437">
-    </div>
-  </div>
-  <section>
-    <div class="wrap">
-      <h2>Het team</h2>
-      <div class="team">
-        <div class="member"><div class="avatar">M</div><h3>Mathijs</h3><p>CEO</p></div>
-        <div class="member"><div class="avatar">M</div><h3>Mert</h3><p>CMO</p></div>
-        <div class="member"><div class="avatar">M</div><h3>Marius</h3><p>CSO</p></div>
-        <div class="member"><div class="avatar">T</div><h3>Thomas</h3><p>CFO</p></div>
-        <div class="member"><div class="avatar">C</div><h3>Casper</h3><p>CPO</p></div>
+
+      <div class="cart-filled" hidden>
+        <ul class="cart-list"></ul>
+
+        <aside class="cart-summary" aria-label="Overzicht">
+          <h2>Overzicht</h2>
+          <p class="summary-row"><span>Aantal</span> <span class="cart-items-count">0 producten</span></p>
+          <p class="summary-row summary-total"><span>Totaal</span> <span class="cart-total">–</span></p>
+          <button class="btn checkout" type="button">Afrekenen</button>
+          <p class="checkout-note" role="status" hidden>Online betalen is nog niet beschikbaar. Wil je bestellen? Neem contact met ons op, dan regelen we het samen.</p>
+        </aside>
       </div>
     </div>
   </section>
